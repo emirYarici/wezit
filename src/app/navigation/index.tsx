@@ -6,6 +6,7 @@ import LoginPage from '../../pages/login/ui/LoginPage';
 import SignupPage from '../../pages/signup/ui/SignupPage';
 import DashboardPage from '../../pages/dashboard/ui/DashboardPage';
 import PatientDetailsPage from '../../pages/patient-details/ui/PatientDetailsPage';
+import EventDetailsPage from '../../pages/patient-details/ui/EventDetailsPage';
 import { supabase } from '../../shared/api/supabase';
 import { Session } from '@supabase/supabase-js';
 import { ActivityIndicator, View } from 'react-native';
@@ -53,6 +54,7 @@ const AppNavigator = () => {
           <>
             <Stack.Screen name="Main" component={MainTabNavigator} />
             <Stack.Screen name="PatientDetails" component={PatientDetailsPage} />
+            <Stack.Screen name="EventDetails" component={EventDetailsPage} />
           </>
         )}
       </Stack.Navigator>
